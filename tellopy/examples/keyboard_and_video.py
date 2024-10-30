@@ -20,7 +20,7 @@ Controls:
 
 import time
 import sys
-import tellopy
+import djitellopy
 import pygame
 import pygame.display
 import pygame.key

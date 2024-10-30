@@ -9,13 +9,13 @@ tellopy sample using joystick and video palyer
 
 import time
 import sys
-import tellopy
+import djitellopy
 import pygame
 import pygame.locals
 from subprocess import Popen, PIPE
 import threading
 import av
-import cv2.cv2 as cv2  # for avoidance of pylint error
+import cv2
 import numpy
 import time
 import traceback

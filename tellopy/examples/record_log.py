@@ -1,5 +1,5 @@
 from time import sleep
-import tellopy
+import djitellopy
 import datetime
 import os
 

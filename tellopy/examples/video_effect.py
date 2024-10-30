@@ -1,19 +1,19 @@
 import sys
 import traceback
-import tellopy
+import djitellopy 
 import av
-import cv2.cv2 as cv2  # for avoidance of pylint error
+import cv2 
 import numpy
 import time
 
 
 def main():
-    drone = tellopy.Tello()
-
+    drone = djitellopy.Tello()
+    drone.get_vide
     try:
         drone.connect()
-        drone.wait_for_connection(60.0)
-
+        drone.stream_on()
+        drone.get_vide
         retry = 3
         container = None
         while container is None and 0 < retry:
@@ -48,7 +48,6 @@ def main():
         traceback.print_exception(exc_type, exc_value, exc_traceback)
         print(ex)
     finally:
-        drone.quit()
         cv2.destroyAllWindows()
 
 if __name__ == '__main__':
